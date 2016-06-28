@@ -4,4 +4,7 @@ node {
    stage 'Stage 2'
    echo 'PATH    ' + env.PATH
    echo 'chemin local   ' + pwd()
+   
+   stage 'Stage Build'
+    build 'ZPowershell_1'
 }
