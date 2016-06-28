@@ -14,6 +14,6 @@ node {
    echo 'Avant copie'
    writeFile file: wFileBatPath  
       echo 'Avant bat '
-    bat 'LaunchPowerShell.bat'
+    // bat 'LaunchPowerShell.bat'
 
 }
