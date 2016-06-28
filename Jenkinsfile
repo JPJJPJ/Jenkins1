@@ -9,7 +9,8 @@ node {
    build 'ZPowershell_1'
    
    stage 'Launch Powershell'
-   def wFileBatPath = pwd() + '@script\LaunchPowerShell.bat'
+   def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
+   echo  wFileBatPath
    writeFile wFileBatPath 
     bat 'LaunchPowerShell.bat'
 
