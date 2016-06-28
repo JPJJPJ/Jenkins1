@@ -6,5 +6,9 @@ node {
    echo 'chemin local   ' + pwd()
    
    stage 'Stage Build'
-    build 'ZPowershell_1'
+   build 'ZPowershell_1'
+   
+   stage 'Launch Powershell'
+    bat LaunchPowerShell.bat
+
 }
