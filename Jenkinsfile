@@ -11,7 +11,9 @@ node {
    stage 'Launch Powershell'
    def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
    echo  wFileBatPath
+   echo 'Avant copie'
    writeFile file: wFileBatPath  
+      echo 'Avant bat '
     bat 'LaunchPowerShell.bat'
 
 }
