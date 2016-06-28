@@ -9,6 +9,6 @@ node {
    build 'ZPowershell_1'
    
    stage 'Launch Powershell'
-    bat LaunchPowerShell.bat
+    bat 'LaunchPowerShell.bat'
 
 }
