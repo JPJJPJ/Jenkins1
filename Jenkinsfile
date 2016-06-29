@@ -20,11 +20,7 @@ node {
    input message:'Continue ?'
       
    stage 'Launch Powershell'
-   def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
-   echo  '--->' + wFileBatPath
    echo 'Avant copie'
-   def wExist = fileExists file: wFileBatPath
-   echo 'file ' + wFileBatPath + ' exist ' + wExist
    
    // writeFile file: wFileBatPath  
       echo 'Avant bat '
