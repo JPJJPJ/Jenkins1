@@ -3,23 +3,26 @@ node {
    echo 'Hello World 1 on Jenkins1'
    echo 'PATH    ' + env.PATH
    echo 'chemin local   ' + pwd()
-   echo 'chemin local - option tmp  ' + pwd(tmp: true)
-   
-   stage 'Stage Build'
-   build 'ZPowershell_1'
-   
+   def wTmpPath = pwd(tmp: true)
+   echo 'chemin local - option tmp  ' + wTmpPath
+      
    stage 'Launch Powershell'
    def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
    echo  wFileBatPath
    echo 'Avant copie'
    def wExist = fileExists file: wFileBatPath
    echo 'file ' + wFileBatPath + ' exist ' + wExist
-   dir path: (pwd(tmp: true))   {
+   dir path: wTmpPath   {
       writeFile file: wFileBatPath  
    }
    
    // writeFile file: wFileBatPath  
       echo 'Avant bat '
     // bat 'LaunchPowerShell.bat'
+    
+    
+   stage 'Stage Build'
+   build 'ZPowershell_1'
+
 
 }
