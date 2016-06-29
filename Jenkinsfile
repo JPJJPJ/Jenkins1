@@ -32,7 +32,7 @@ node {
    stage 'Launch Powershell'
    dir(path: wTmpPath)   {
         echo 'Avant lancement bat '
-        bat 'LaunchPowerShell.bat
+        bat 'LaunchPowerShell.bat'
    }
     
    input message:'Continue ?'
