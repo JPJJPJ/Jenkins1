@@ -27,8 +27,7 @@ node {
         writeFile file: 'TestPowershell1.ps1', text: wContentPs1
    }
 
-   input message:'Continue ?'
-      
+    
    stage 'Launch Powershell'
    dir(path: wTmpPath)   {
         echo 'Avant lancement bat '
