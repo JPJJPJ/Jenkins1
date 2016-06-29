@@ -8,7 +8,8 @@ try{
   echo ZPowershell Start  
   echo -------------------- 
 
-  get-process | out-file .\truc\process.txt
+  get-process | out-file process.txt
+#  get-process | out-file .\truc\process.txt        # raise error
         
   echo -------------------- 
   echo ZPowershell End
