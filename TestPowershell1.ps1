@@ -1,8 +1,7 @@
 echo -------------------- 
 echo ZPowershell__Sleep
-Write-Error -Message "Error: Too many input values." -Category InvalidArgument
+Write-Error -Message "Test - Manual Error message"
 Start-sleep 2
-get-process | out-file process.txt
 echo --------------------
 try{
   echo -------------------- 
