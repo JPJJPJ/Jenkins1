@@ -8,16 +8,17 @@ try{
   echo ZPowershell Start  
   echo -------------------- 
 
-    get-process | out-file .\truc\process.txt
+  get-process | out-file .\truc\process.txt
         
   echo -------------------- 
   echo ZPowershell End
   echo -------------------- 
 }catch{
   echo -------------------- 
-  echo ZPowershell catch
+  echo '---> ZPowershell catch'
   echo --------------------
-  Write-Error -Message "Error in catch" 
+  #Write-Error -Message "Error in catch" 
 	echo $_.Exception.Message
-	exit 10   
+	echo 'avant appel exit 10 dans catch'
+  exit 10   
 }
