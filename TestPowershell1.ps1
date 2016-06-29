@@ -5,7 +5,7 @@ Start-sleep 2
 echo --------------------
 try{
   echo -------------------- 
-  echo ZPowershell Start
+  echo ZPowershell Start  
   echo -------------------- 
 
     get-process | out-file .\truc\process.txt
