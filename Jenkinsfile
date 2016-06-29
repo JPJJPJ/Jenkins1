@@ -13,7 +13,7 @@ node {
    echo  wFileBatPath
    echo 'Avant copie'
    def wExist = fileExists file: wFileBatPath
-   echo 'file ${wFileBatPath} exist  ${wExist} '
+   echo 'file ' + wFileBatPath + ' exist ' + wExist
    // writeFile file: wFileBatPath  
       echo 'Avant bat '
     // bat 'LaunchPowerShell.bat'
