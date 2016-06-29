@@ -2,13 +2,13 @@ node {
    stage 'Stage JenkinsFile on Jenkins1'
    echo 'Hello World 1 on Jenkins1'
    echo 'PATH    ' + env.PATH
-   echo 'chemin local   ' + pwd()
+   echo '--->' + 'chemin local   ' + pwd()
    def wTmpPath = pwd(tmp: true)
-   echo 'chemin local - option tmp  ' + wTmpPath
+   echo '--->' + 'chemin local - option tmp  ' + wTmpPath
       
    stage 'Launch Powershell'
    def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
-   echo  wFileBatPath
+   echo  '--->' + wFileBatPath
    echo 'Avant copie'
    def wExist = fileExists file: wFileBatPath
    echo 'file ' + wFileBatPath + ' exist ' + wExist
