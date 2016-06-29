@@ -8,9 +8,8 @@ try{
   echo ZPowershell Start
   echo -------------------- 
 
-    #get-process | out-file .\truc\process.txt
-    get-process
-    
+    get-process | out-file .\truc\process.txt
+        
   echo -------------------- 
   echo ZPowershell End
   echo -------------------- 
