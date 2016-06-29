@@ -3,7 +3,7 @@ node {
    echo 'Hello World 1 on Jenkins1'
    echo 'PATH    ' + env.PATH
    echo 'chemin local   ' + pwd()
-   echo 'chemin local - option tmp  ' + pwd(true)
+   echo 'chemin local - option tmp  ' + pwd(tmp: true)
    
    stage 'Stage Build'
    build 'ZPowershell_1'
