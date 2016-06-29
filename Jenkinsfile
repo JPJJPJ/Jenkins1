@@ -30,12 +30,12 @@ node {
    input message:'Continue ?'
       
    stage 'Launch Powershell'
-   echo 'Avant copie'
-   
-   // writeFile file: wFileBatPath  
-      echo 'Avant bat '
-    // bat 'LaunchPowerShell.bat'
+   dir(path: wTmpPath)   {
+        echo 'Avant lancement bat '
+        bat 'LaunchPowerShell.bat
+   }
     
+   input message:'Continue ?'
     
    stage 'Stage Build'
    build 'ZPowershell_1'
