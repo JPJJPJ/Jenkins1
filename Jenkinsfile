@@ -1,7 +1,7 @@
 node {
    stage 'Stage JenkinsFile on Jenkins1'
    echo 'Hello World 1 on Jenkins1'
-   echo 'PATH    ' + env.PATH
+   echo 'PATH   ' + env.PATH
    echo '--->' + 'chemin local   ' + pwd()
    def wTmpPath = pwd(tmp: true)
    echo '--->' + 'chemin local - option tmp  ' + wTmpPath
