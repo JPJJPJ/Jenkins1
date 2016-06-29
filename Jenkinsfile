@@ -13,7 +13,7 @@ node {
    def wExist = fileExists file: wFileBatPath
    echo 'file ' + wFileBatPath + ' exist ' + wExist
    def wContent = readFile wFileBatPath
-   echo 'content  ' + wContent
+   echo '===== content  ' + wContent
    dir(path: wTmpPath)   {
         echo ('--> cur dir: ' + pwd() )
         writeFile file: 'testintmp.txt', text: 'coucou'
