@@ -12,6 +12,7 @@ node {
    def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
    echo  wFileBatPath
    echo 'Avant copie'
+   echo fileExists file: wFileBatPath
    // writeFile file: wFileBatPath  
       echo 'Avant bat '
     // bat 'LaunchPowerShell.bat'
