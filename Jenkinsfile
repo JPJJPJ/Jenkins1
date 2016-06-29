@@ -12,7 +12,9 @@ node {
    def wFileBatPath = pwd() + '@script\\LaunchPowerShell.bat'
    def wExist = fileExists file: wFileBatPath
    echo 'file ' + wFileBatPath + ' exist ' + wExist
-   dir(wTmpPath)   {
+   def wContent = readFile wFileBatPath
+   echo 'content  ' + wContent
+   dir(path: wTmpPath)   {
         echo ('--> cur dir: ' + pwd() )
         writeFile file: 'testintmp.txt', text: 'coucou'
    }
