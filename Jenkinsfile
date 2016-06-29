@@ -14,6 +14,10 @@ node {
    echo 'Avant copie'
    def wExist = fileExists file: wFileBatPath
    echo 'file ' + wFileBatPath + ' exist ' + wExist
+   dir path: (pwd(tmp: true))   {
+      writeFile file: wFileBatPath  
+   }
+   
    // writeFile file: wFileBatPath  
       echo 'Avant bat '
     // bat 'LaunchPowerShell.bat'
