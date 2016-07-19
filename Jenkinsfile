@@ -37,7 +37,7 @@ node {
    input message:'Continue ?'
     
    stage 'Stage Build'
-   build 'ZPowershell_1'
+   build 'Z-PS-01 ZPowershell_1 A dep Niv 1'
 
 
 }
