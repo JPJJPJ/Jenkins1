@@ -34,7 +34,7 @@ node {
         bat 'LaunchPowerShell.bat'
    }
     
-   input message:'Continue ?'
+   // input message:'Continue ?'
     
    stage 'Stage Build'
    build 'Z-PS-01 ZPowershell_1 A dep Niv 1'
