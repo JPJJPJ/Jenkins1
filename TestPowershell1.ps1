@@ -1,5 +1,5 @@
 echo -------------------- 
-echo ZPowershell__Sleep__xxx
+echo ZPowershell__Sleep__xxxxx
 #Write-Error -Message "Test - Manual Error message"
 Start-sleep 2
 echo --------------------
