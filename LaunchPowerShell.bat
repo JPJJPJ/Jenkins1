@@ -1,4 +1,4 @@
-echo 'LaunchPowerShell.bat Start'
+echo 'LaunchPowerShell.bat Start - V1'
 
 powershell -ExecutionPolicy RemoteSigned -file TestPowershell1.ps1
 set code=%ERRORLEVEL%
